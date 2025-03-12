@@ -1,0 +1,105 @@
+body {
+  background-color: #ffce0c22;
+  height: 100vh;
+  margin: 0; 
+  padding: 0;
+  scroll-behavior: smooth;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.374);
+  display: flex;
+  flex-direction: column; 
+  
+}
+
+ul {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+}
+
+/* styles for nav-bar starts */
+.nav {
+  height: 12vh;
+  background-color: #ffce0c45;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.logo h3 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  margin: 0; /* Remove default margin */
+}
+
+/* styles for nav-bar ends */
+
+/* styles for main starts */
+.main {
+  display: flex;
+  flex-grow: 1; /* Ensure main takes up remaining space */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* sidebar-styles starts */
+.sidebar {
+  
+  width: 250px; /* Set a fixed width for sidebar */
+  padding: 20px; /* Add padding for better spacing */
+  height: 100vh;
+  
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add gap between list items */
+}
+
+.sidebar li {
+  padding: 10px; /* Add padding for better spacing */
+}
+
+/* sidebar-styles ends */
+
+/* styles for category starts */
+.category {
+  background-color: #ffcc0023;
+  flex-grow: 1; /* Ensure category takes up remaining space */
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Add padding for better spacing */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.adding-category, .editing-category {
+  background-color: white; /* Add background color for better contrast */
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 8px; /* Add border radius for better aesthetics */
+  margin-bottom: 20px; /* Add margin for better spacing */
+}
+
+.adding-category form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add gap between form elements */
+}
+
+.editing-category {
+  overflow-x: auto; /* Allow horizontal scrolling for table */
+}
+
+.editing-category table {
+  width: 100%; /* Ensure table takes full width */
+}
+
+/* styles for category ends */
+
+/* styles for main ends */
