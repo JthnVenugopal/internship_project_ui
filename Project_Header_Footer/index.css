@@ -1,0 +1,78 @@
+/* general styles */
+body{
+  background-color: #ffce0c22;
+  height: 100vh;
+  scroll-behavior: smooth;
+
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.152);
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/* navbar starts ------------------------------------------*/
+
+.navbar {
+  z-index: 1000;
+}
+
+.logo h3{
+  
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+
+}
+
+/* navbar ends */
+
+.main{
+  height: 100vh;
+}
+
+
+/* footer starts-------------------------------------------- */
+.footer {
+
+  height: 80vh;
+  overflow-x: hidden;
+
+}
+
+.follow-img{
+  height: 3rem;
+}
+
+@media(max-width:500px){
+  .footer{
+    height: fit-content;
+    font-size: 10px;
+  }
+
+  .follow img{
+    height: 2rem;
+
+  }
+
+  .footer-content{
+    flex-direction: row
+    !important;
+
+    justify-content: space-between;
+    
+
+    gap: 15px;
+  }
+
+  
+}
+
+/* .footer .row-2 .col-md-3{
+  border: 1px solid rgb(255, 255, 255);
+} */
+
+/* footer ends----------------------------------------------- */
